@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class AnaliseDna {
 
-    // 1 = Duck; 2: Chicken; 3: Rhea; 4: Ostrich; 5: Falcon; 6: Subosc; 7: Oscine; 8: Aligat; 9: Turtle
+    // 0 = Duck; 1: Chicken; 2: Rhea; 3: Ostrich; 4: Falcon; 5: Subosc; 6: Oscine; 7: Aligat; 8: Turtle
     String[] animais;
     File Birds;
     BufferedReader leitor;
@@ -18,6 +18,7 @@ public class AnaliseDna {
         animais = new String[9];
     }
 
+    // COLOCA O DNA DE CADA ANIMAL NA SEU RESPECTIVA STRING
     public void extrairStrings() throws IOException {
 
         try {
@@ -47,6 +48,7 @@ public class AnaliseDna {
         }
     }
 
+    // COMPARA O DNA DO ANIMAL SELECIONADO COM O DNA DO RESTO
     public int comparar(int animal, int comparado){
 
         compatibilidade = 0;
